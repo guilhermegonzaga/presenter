@@ -1,0 +1,25 @@
+{
+    "name": "guilhermegonzaga/presenter",
+    "description": "Implementation for Laravel 5 of the presenter design pattern.",
+    "keywords": ["laravel", "presenter", "view", "entity"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Guilherme de Oliveira Gonzaga",
+            "email": "guilhermeoliveyra@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laracodes\\Presenter\\": "src/"
+        }
+    },
+    "suggest": {
+        "guilhermegonzaga/repository": "Repositories for Laravel 5 which is used to abstract the database layer."
+    },
+    "minimum-stability": "stable"
+}
