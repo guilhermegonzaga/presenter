@@ -38,6 +38,6 @@ abstract class Presenter
             return $this->{$camel_property}();
         }
 
-        return $this->model->{$property};
+        return $this->model->{snake_case($property)};
     }
 }

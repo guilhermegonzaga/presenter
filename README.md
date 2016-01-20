@@ -70,12 +70,14 @@ Notice how the call to the present() method (which will return your new or cache
 
 ## Notices
 
-When you call a method that does not exist in its class presenter, this package will automatically call the property in the model without conversion to camelCase.
+When you call a method that does not exist in its class presenter, this package will automatically call the property in the model with conversion to snake_case.
 
 Ex:
 
 ```php
-<h1>Hello, {{ $user->present()->first_name }}</h1> // automatically calls the property in the model
+// automatically calls the property in the model
+<h1>Hello, {{ $user->present()->firstName }}</h1> // automatically convert to snake_case
+<h1>Hello, {{ $user->present()->first_name }}</h1>
 ```
 
 ## Credits
