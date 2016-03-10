@@ -9,7 +9,7 @@ trait Presentable
     /**
      * @var \Laracodes\Presenter\Presenter
      */
-    private $presenterInstance;
+    protected $presenterInstance;
 
     /**
      * @return mixed
