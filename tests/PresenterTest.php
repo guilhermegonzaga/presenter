@@ -85,7 +85,7 @@ class Product extends Model
         'name' => 'product 1',
         'description' => 'description of product 1',
         'price' => 9.90,
-        'property_test' => 'testing'
+        'property_test' => 'testing',
     ];
 }
 
@@ -103,6 +103,6 @@ class ProductPresenter extends Presenter
 
     public function price()
     {
-        return '$' . $this->model->price;
+        return '$'.$this->model->price;
     }
 }
