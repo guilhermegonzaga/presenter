@@ -8,7 +8,7 @@ It causes the data to be displayed in a way understandable to humans.
 
 ## Installation
 
-#### Laravel 5.x
+#### Laravel 5.x or 6.x
 
 Execute the following command to get the latest version of the package:
 
