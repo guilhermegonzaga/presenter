@@ -2,6 +2,7 @@
 
 namespace Laracodes\Presenter;
 
+use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
 
 abstract class Presenter
@@ -25,7 +26,7 @@ abstract class Presenter
      */
     public function __isset($property)
     {
-        return method_exists($this, camel_case($property));
+        return method_exists($this, Str::camel($property));
     }
 
     /**
@@ -34,12 +35,12 @@ abstract class Presenter
      */
     public function __get($property)
     {
-        $camel_property = camel_case($property);
+        $camel_property = Str::camel($property);
 
         if (method_exists($this, $camel_property)) {
             return $this->{$camel_property}();
         }
 
-        return $this->model->{snake_case($property)};
+        return $this->model->{Str::snake($property)};
     }
 }
