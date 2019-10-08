@@ -3,6 +3,7 @@
 use Laracodes\Presenter\Presenter;
 use Laracodes\Presenter\Traits\Presentable;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class PresenterTest extends PHPUnit_Framework_TestCase
 {
@@ -98,7 +99,7 @@ class ProductPresenter extends Presenter
 
     public function shortName()
     {
-        return str_limit($this->name(), 7);
+        return Str::limit($this->name(), 7);
     }
 
     public function price()
