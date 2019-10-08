@@ -2,7 +2,7 @@
 
 [![Latest Stable Version](https://poser.pugx.org/guilhermegonzaga/presenter/v/stable)](https://packagist.org/packages/guilhermegonzaga/presenter) [![Total Downloads](https://poser.pugx.org/guilhermegonzaga/presenter/downloads)](https://packagist.org/packages/guilhermegonzaga/presenter) [![Latest Unstable Version](https://poser.pugx.org/guilhermegonzaga/presenter/v/unstable)](https://packagist.org/packages/guilhermegonzaga/presenter) [![License](https://poser.pugx.org/guilhermegonzaga/presenter/license)](https://packagist.org/packages/guilhermegonzaga/presenter)
 
-Presenter is a design pattern for Laravel 5 which is used to modify the data that comes from your model to your views.
+Presenter is a design pattern for Laravel which is used to modify the data that comes from your model to your views.
 <br>
 It causes the data to be displayed in a way understandable to humans.
 
