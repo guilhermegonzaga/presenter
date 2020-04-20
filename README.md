@@ -1,6 +1,7 @@
 # Laravel Presenter
 
 [![Latest Stable Version](https://poser.pugx.org/guilhermegonzaga/presenter/v/stable)](https://packagist.org/packages/guilhermegonzaga/presenter) [![Total Downloads](https://poser.pugx.org/guilhermegonzaga/presenter/downloads)](https://packagist.org/packages/guilhermegonzaga/presenter) [![Latest Unstable Version](https://poser.pugx.org/guilhermegonzaga/presenter/v/unstable)](https://packagist.org/packages/guilhermegonzaga/presenter) [![License](https://poser.pugx.org/guilhermegonzaga/presenter/license)](https://packagist.org/packages/guilhermegonzaga/presenter)
+![PHPUnit Test](https://github.com/guilhermegonzaga/presenter/workflows/PHPUnit%20Test/badge.svg?event=push)
 
 Presenter is a design pattern for Laravel which is used to modify the data that comes from your model to your views.
 <br>
