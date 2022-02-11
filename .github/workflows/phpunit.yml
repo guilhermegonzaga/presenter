@@ -9,12 +9,21 @@ on:
       - master
 
 jobs:
-  phpunit-test:
-
+  run:
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        php-versions: ['5.4', '5,5', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1']
+    name: PHP ${{ matrix.php-versions }}
     steps:
     - uses: actions/checkout@v2
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: ${{ matrix.php-versions }}
+        extensions: mbstring, intl      
+        tools: phpunit
 
     - name: Validate composer.json
       run: composer validate --no-check-lock
