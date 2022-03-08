@@ -9,7 +9,7 @@ It causes the data to be displayed in a way understandable to humans.
 
 ## Installation
 
-#### Laravel (5.x|6.x|7.x|8.x)
+#### Laravel (5.x|6.x|7.x|8.x|9.x)
 
 Execute the following command to get the latest version of the package:
 
